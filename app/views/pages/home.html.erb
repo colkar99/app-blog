@@ -1,89 +1,10 @@
-<h1>hiiiiiiiiiiiiiii</h1>
-
-
-<style type="text/css">
-
-	.container-fluid{
-		width: 100%;
-		height: 100%;
-	}
-	
-	.bigbox{
-		width: 100%;
-		height: 100%;
-		margin: 10px
-	}
-	.box1{
-		width:75%;
-		height: 100%;
-		margin:10px;
-		display: inline-block;;
-		border:5px solid black; 
-	}
-	.box2{
-		width: 20%;
-		height: 100%;
-		margin:10px; 
-		display: inline-block;;
-		border:5px solid black;
-	}
-</style>
-<div class="container-fluid">
-	<div class="bigbox">
-		<h1 style="text-align: center;">This is my 1st blog</h1>
-	</div>
-	<div class="bigbox">
-		<div class="box1">
-			<label>Ruby on rails tutorial:</label>
-			<p>David Heinemeier Hansson extracted Ruby on Rails from his work on the project management tool Basecamp at the web application company also called Basecamp.[5] Hansson first released Rails as open source in July 2004, but did not share commit rights to the project until February 2005.[citation needed] In August 2006, the framework reached a milestone when Apple announced that it would ship Ruby on Rails with Mac OS X v10.5 "Leopard",[6] which was released in October 2007.
-
-Rails version 2.3 was released on March 15, 2009 with major new developments in templates, engines, Rack and nested model forms. Templates enable the developer to generate a skeleton application with custom gems and configurations. Engines give developers the ability to reuse application pieces complete with routes, view paths and models. The Rack web server interface and Metal allow one to write optimized pieces of code that route around Action Controller.[7]
-
-On December 23, 2008, Merb, another web application framework, was launched, and Ruby on Rails announced it would work with the Merb project to bring "the best ideas of Merb" into Rails 3, ending the "unnecessary duplication" across both communities.[8] Merb was merged with Rails as part of the Rails 3.0 release.[9][10]
-
-Rails 3.1 was released on August 31, 2011, featuring Reversible Database Migrations, Asset Pipeline, Streaming, jQuery as default JavaScript library and newly introduced CoffeeScript and Sass into the stack.[11]
-
-Rails 3.2 was released on January 20, 2012 with a faster development mode and routing engine (also known as Journey engine), Automatic Query Explain and Tagged Logging.[12] Rails 3.2.x is the last version that supports Ruby 1.8.7.[13] Rails 3.2.12 supports Ruby 2.0.[14]
-
-Rails 4.0 was released on June 25, 2013, introducing Russian Doll Caching, Turbolinks, Live Streaming as well as making Active Resource, Active Record Observer and other components optional by splitting them as gems.[15]
-
-Rails 4.1 was released on April 8, 2014, introducing Spring, Variants, Enums, Mailer previews, and secrets.yml.[16]
-
-Rails 4.2 was released on December 19, 2014, introducing Active Job, asynchronous emails, Adequate Record, Web Console, and foreign keys.[17]
-
-Rails 5.0 was released on June 30, 2016, introducing Action Cable, API mode, and Turbolinks 5.[18]
-
-Rails 5.0.0.1 was released on August 10, 2016 with Exclusive use of rails CLI over Rake and supports Ruby 2.2.2+ versions
-
-Rails 5.1 was released on April 27, 2017, introducing Javascript integration changes (management of JavaScript dependencies from NPM via Yarn, optional compilation of JavaScript using Webpack, and a rewrite of Rails UJS to use vanilla JavaScript instead of depending on jQuery), system tests using Capybara, encrypted secrets, parameterized mailers, direct & resolved routes, and a unified form_with helper replacing the form_tag/form_for helpers.[19]</p>
-		</div>
-		<div class="box2">
-			<label>Quick Links</label>
-			<%= link_to 'About' , about_path%>
-			<%= link_to 'app-blog' , articles_path%>
-		</div>
-	</div>
+<div class="center jumbotron">
+  <h1>App-blog</h1>
+  <%= link_to 'Sign up' ,'',class: 'btn btn-primary btn-lg btn-xlarge'%>
 </div>
-<!-- <div class="box"><h1 style="text-align:center;">This is my first blog</h1></div>
-<div class="box1">
-	<ul><b>About rails</b>
-		<li><p>Rails is a software library that extends the Ruby programming language. David Heinemeier Hansson is its creator. He gave it the name “Ruby on Rails,” though it is often just called “Rails.”
 
-It is software code that is added to the Ruby programming language. Technically, it is a package library (specifically, a RubyGem), that is installed using the operating system command-line interface.
-
-Rails is a framework for building websites. As such, Rails establishes conventions for easier collaboration and maintenance. These conventions are codified as the Rails API (the application programming interface, or directives that control the code). The Rails API is documented online and described in books, articles, and blog posts. Learning Rails means learning how to use the Rails conventions and its API.
-
-Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application that runs on a web server. Because it runs on a web server, Rails is considered a server-side, or “back end,” web application development platform (the web browser is the “front end”). Later, this article will describe web applications in greater depth and show why a web development framework is needed to build complex websites.</p></li>
-		<li><p>In a podcast from This Developer’s Life and in an interview from 2005, David Heinemeier Hansson, the creator of Rails, describes building an online project management application named BaseCamp in 2004. He had been using the PHP programming language because he could get things done quickly but was frustrated because of a lack of abstraction and frequently repetitive code that made PHP “dirty.” Hansson wanted to use the “clean” software enginering abstractions supported in the Java programming language but found development in Java was cumbersome. He tried Ruby and was excited about the ease of use (he calls it pleasure) he found in the Ruby language.
-
-Ruby is known among programmers for a terse, uncluttered syntax that doesn’t require a lot of extra punctuation. Compared to Java, Ruby is streamlined, with less code required to create basic structures such as data fields. Ruby is a modern language that makes it easy to use high-level abstractions such as metaprogramming. In particular, metaprogramming makes it easy to develop a “domain specific language” that customizes Ruby for a particular set of uses (Rails and many gems use this “DSL” capability).
-
-Ruby’s key advantage is RubyGems, the package manager that makes it easy to create and share software libraries (gems) that extend Ruby. RubyGems provides a simple system to install gems. Anyone can upload a gem to the central RubyGems website, making the gem immediately available for installation by anyone. The RubyGems website is where you’ll obtain the most recent version of Rails. And it is where you will obtain all the gems that help you build complex websites.</p></li>
-		<li></li>
-	</ul>
-</div>
 <div class="box2">
-	<div>
-		
-	</div>
-</div> -->
+	<label>Quick Links</label>
+	<%= link_to 'About' , about_path%> |
+	<%= link_to 'app-blog' , articles_path%>
+</div>
