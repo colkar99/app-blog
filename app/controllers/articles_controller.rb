@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 		if @article.save
 			#something
 			redirect_to article_path(@article) #this code used to show after submission
-			flash[:notice] = "Article was successfully created"
+			flash[:success] = "Article was successfully created"
 		else
 			render 'new'
 		end
@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
 		@article = Article.find(params[:id])
 		if @article.update(article_params)
 			redirect_to article_path(@article)
-			flash[:notice] = "Article successfully updated"
+			flash[:success] = "Article successfully updated"
 		else
 			render 'edit'
 		end
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
 		@article = Article.find(params[:id])
 		@article.destroy
 		redirect_to articles_path
-		flash[:notice] = "Article successfully deleted"
+		flash[:danger] = "Article successfully deleted"
 	end	
 	private
 	def set_articles
