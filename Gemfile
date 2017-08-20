@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 #Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
+# this gem is used for rails console not working in my laptop
+gem 'rb-readline'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
