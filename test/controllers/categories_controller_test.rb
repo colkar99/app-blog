@@ -17,4 +17,9 @@ class CategoriesControllerTest < ActionController::TestCase
 		assert_response :success 
 	end
 
+	test "should redirect create when admin not logged in" do
+		assert_no_difference 'Category.count' do 
+			
+	end
+
 end

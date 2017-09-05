@@ -1,5 +1,5 @@
 require 'test_helper'
-class CreateCategoriesTest < ActionDispatch::IntegrationTest
+class ListCategoriesTest < ActionDispatch::IntegrationTest
 
 	def setup
 		@category = Category.create(name: 'sports')
