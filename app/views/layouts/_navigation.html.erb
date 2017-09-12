@@ -24,12 +24,12 @@
             <ul class="dropdown-menu">
               <!-- <li><a href="#">Action</a></li> -->
               <li><%= link_to 'New Article' , new_article_path %></li>
-              <li><a href="#">Another action</a></li>
+              <!-- <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Separated link</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#">One more separated link</a></li> -->
             </ul>
           </li>
           <% end %>
@@ -62,9 +62,9 @@
           <ul class="dropdown-menu">
             <li><a href="#"><%= link_to "Edit your profile", edit_user_path(current_user)%></a></li>
             <li><a href="#"><%= link_to "View your profile", user_path(current_user)%></a></li>
-            <li><a href="#">Something else here</a></li>
+            <!-- <li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Separated link</a></li> -->
             <% else %>
              <li><%= link_to 'login', login_path %></li>
               <li><%= link_to 'signup', signup_path %></li>

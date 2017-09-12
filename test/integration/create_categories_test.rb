@@ -2,7 +2,7 @@ require 'test_helper'
 class CreateCategoriesTest < ActionDispatch::IntegrationTest
 
 	def setup
-		@category = Category.create(name: 'sports')
+		@category = Category.create(name: 'enter')
 		@user = User.create(username: "karthik" , email: "karthik@gmail.co", password: "password" , admin: true)
 	end
 

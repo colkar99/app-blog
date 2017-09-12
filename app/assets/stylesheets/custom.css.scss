@@ -12,9 +12,13 @@ $navbar-default-bg:
 	letter-spacing:-1px;
 
 }
+
 #logo:hover{
 	color:#004037;
 	text-decoration:none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #060000;
 }
 .center{
 	text-align:center;
